@@ -1,9 +1,10 @@
-# python-segments
+## python-segments
+
 日常编写/收集一些通用的代码片段
 
 
 
-#### 1. 遍历文件夹得到目录下所有文件 [file_iter.py](https://github.com/codeccc/python-segments/file/file_iter.py)
+#### 1. 遍历文件夹得到目录下所有文件 [file_iter.py](https://github.com/codeccc/python-segments/blob/master/file/file_iter.py)
 
 代码如下: `your_path`  为你要扫描的文件夹路径. 
 
