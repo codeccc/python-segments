@@ -1,8 +1,16 @@
 ## python-segments
 
-日常编写/收集一些通用的代码片段
+日常编写/收集一些通用的代码片段/文档
 
 
+
+### 文档
+
+[Scrapy爬虫框架入门之初识Scrapy](https://github.com/codeccc/python-segments/blob/master/docs/Scrapy爬虫框架入门之初识Scrapy.md)
+
+
+
+### 代码片段
 
 #### 1. 遍历文件夹得到目录下所有文件 [file_iter.py](https://github.com/codeccc/python-segments/blob/master/file/file_iter.py)
 
