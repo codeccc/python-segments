@@ -87,3 +87,40 @@ mobileUserAgent = {
 }
 ```
 
+
+
+### 项目实战
+
+#### 实战一 爬取2345影视电影信息
+
+**爬取网址:**  http://dianying.2345.com/list/-------1.html
+
+##### 需求分析
+
+爬取该页面下的电影信息, 包含电影名称, 电影评分, 主演 及电影缩略图, 将全部页数下的电影保存到 热门电影.txt   ,缩略图保存到文件夹 image 下
+
+![网站截图](./imgs/1.jpg)
+
+
+
+##### 使用技术分析
+
+ 使用urllib访问链接获取源代码并保存图片,使用BeatifulSoup解析标签,使用正则表达式提取关键字,使用logging记录操作日志
+
+##### **爬取结果:**
+
+```
+热门电影.txt
+
+追龙Ⅱ 	 8.9 	 http://imgwx3.2345.com/dypcimg/img/4/67/s203534.jpg?1558957030 	 ['梁家辉\xa0\xa0', '古天乐\xa0\xa0'] 
+流浪地球 	 9.6 	 http://imgwx4.2345.com/dypcimg/img/0/67/s201366.jpg?1556617765 	 ['屈楚萧\xa0\xa0', '李光洁\xa0\xa0'] 
+熊出没·原始时代 	 7.9 	 http://imgwx4.2345.com/dypcimg/img/9/67/s203231.jpg 	 ['熊大\xa0\xa0', '熊二\xa0\xa0'] 
+反贪风暴4 	 9.8 	 http://imgwx5.2345.com/dypcimg/img/a/67/s202697.jpg?1553159231 	 ['古天乐\xa0\xa0', '郑嘉颖\xa0\xa0'] 
+掠食城市 	 9.1 	 http://imgwx3.2345.com/dypcimg/img/8/67/s201719.jpg?1546929260 	 ['海拉·西尔玛\xa0\xa0', '雨果·维文\xa0\xa0'] 
+```
+
+![文件截图](./imgs/2.jpg)
+
+##### 项目代码
+
+[getmovie.py传送门](https://github.com/codeccc/python-segments/blob/master/file/get_movie.py)
